@@ -1,0 +1,15 @@
+﻿<Window x:Class="Stone.Wpf.Client.Pages.MenuPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Stone.Wpf.Client.Pages"
+        mc:Ignorable="d"
+        Title="MenuPrincipal" Height="300" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="btnNovaTransacao" Content="Nova Transação" HorizontalAlignment="Center" Margin="51,51,41,0" VerticalAlignment="Top" Width="200" Height="30" Click="btnNovaTransacao_Click"/>
+        <Button x:Name="btnConsultaTransacoes" Content="Consultar Transações" HorizontalAlignment="Center" Margin="51,106,41,0" VerticalAlignment="Top" Width="200" Height="30" Click="btnConsultaTransacoes_Click"/>
+        <Button x:Name="btnSair" Content="Sair" HorizontalAlignment="Center" Margin="51,162,41,0" VerticalAlignment="Top" Width="200" Height="30" Click="btnSair_Click"/>
+
+    </Grid>
+</Window>

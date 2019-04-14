@@ -14,5 +14,8 @@ namespace Stone.Domain.Model.Entities
 
         public int SequencialCartao { get; set; }
         public Cartao Cartao { get; set; }
+
+        public int SequencialCliente { get; set; }
+        public Cliente Cliente { get; set; }
     }
 }

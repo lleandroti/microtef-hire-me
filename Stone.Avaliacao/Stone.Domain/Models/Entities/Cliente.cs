@@ -1,4 +1,6 @@
-﻿namespace Stone.Domain.Model.Entities
+﻿using System.Collections.Generic;
+
+namespace Stone.Domain.Model.Entities
 {
     public class Cliente
     {
@@ -12,5 +14,7 @@
         public virtual string Password { get; set; }
         public decimal LimiteCredito { get; set; }
         public bool Ativo { get; set; }
+
+        public ICollection<Transacao> Transacoes { get; set; }
     }
 }

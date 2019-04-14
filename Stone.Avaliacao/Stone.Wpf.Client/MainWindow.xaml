@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Stone.Wpf.Client"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Pagamentos" Height="300" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Closed="Window_Closed">
     <Grid>
-        
+        <TextBox x:Name="txtCliente" HorizontalAlignment="Left" Height="23" Margin="35,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224"/>
+        <Label x:Name="label1" Content="Cliente" HorizontalAlignment="Left" Margin="35,58,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Senha" HorizontalAlignment="Left" Margin="35,124,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Acesse a sua conta" HorizontalAlignment="Center" Margin="35,19,35,0" VerticalAlignment="Top" Width="224"/>
+        <PasswordBox x:Name="txtSenha" HorizontalAlignment="Left" Margin="35,151,0,0" VerticalAlignment="Top" Width="224" Height="23"/>
+        <Button x:Name="btnEntrar" Content="Entrar" HorizontalAlignment="Center" Margin="35,209,159,0" VerticalAlignment="Top" Width="100" Height="30" Click="btnEntrar_Click"/>
+        <Button x:Name="btnFinalizar" Content="Finalizar" HorizontalAlignment="Left" Margin="159,209,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="btnFinalizar_Click"/>
+
     </Grid>
 </Window>

@@ -8,3 +8,6 @@ D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Domain
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Domain\bin\Debug\AutoMapper.xml
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Domain\bin\Debug\System.ValueTuple.xml
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Domain\obj\Debug\Stone.Domain.csprojResolveAssemblyReference.cache
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Domain\bin\Debug\Stone.Framework.dll
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Domain\bin\Debug\Stone.Framework.pdb
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Domain\bin\Debug\Stone.Domain.dll.config

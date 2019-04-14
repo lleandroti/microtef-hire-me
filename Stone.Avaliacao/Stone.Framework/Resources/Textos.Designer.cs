@@ -70,6 +70,15 @@ namespace Stone.Framework.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Aviso.
+        /// </summary>
+        public static string Aviso {
+            get {
+                return ResourceManager.GetString("Aviso", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Stone Pagamentos.
         /// </summary>
         public static string StonePagamentos {

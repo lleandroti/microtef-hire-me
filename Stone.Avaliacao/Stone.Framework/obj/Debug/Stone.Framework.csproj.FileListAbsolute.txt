@@ -5,3 +5,12 @@ D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framew
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\obj\Debug\Stone.Framework.Resources.Mensagens.resources
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\obj\Debug\Stone.Framework.Resources.Textos.resources
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\obj\Debug\Stone.Framework.csproj.GenerateResource.Cache
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\obj\Debug\Stone.Framework.csprojResolveAssemblyReference.cache
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\bin\Debug\Stone.Framework.dll.config
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\bin\Debug\Newtonsoft.Json.dll
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\bin\Debug\System.Net.Http.Formatting.dll
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\bin\Debug\System.Web.Http.dll
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\bin\Debug\Newtonsoft.Json.pdb
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\bin\Debug\Newtonsoft.Json.xml
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\bin\Debug\System.Net.Http.Formatting.xml
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\bin\Debug\System.Web.Http.xml

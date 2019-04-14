@@ -1,4 +1,4 @@
-﻿namespace Stone.Domain.Model.Entities
+﻿namespace Stone.Domain.Models.Adapters
 {
     public class ClienteCadastroModel
     {

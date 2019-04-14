@@ -2,6 +2,7 @@
 // package to your project.
 ////#define Handle_PageResultOfT
 
+using Stone.Domain.Model.Entities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,6 +13,8 @@ using System.Net.Http.Headers;
 using System.Reflection;
 using System.Web;
 using System.Web.Http;
+using Stone.Domain.Models.Adapters;
+
 #if Handle_PageResultOfT
 using System.Web.Http.OData;
 #endif
@@ -62,6 +65,19 @@ namespace Stone.Api.Acquirer.Areas.HelpPage
             //// Uncomment the following to use "[0]=foo&[1]=bar" directly as the sample for all actions that support form URL encoded format
             //// and have IEnumerable<string> as the body parameter or return type.
             //config.SetSampleForType("[0]=foo&[1]=bar", new MediaTypeHeaderValue("application/x-www-form-urlencoded"), typeof(IEnumerable<string>));
+
+            Type[] types = { typeof(ClienteCadastroModel), typeof(ClienteAlteraModel) };
+
+            foreach (Type t in types)
+            {
+                List<string> propExample = new List<string>();
+                foreach (var p in t.GetProperties())
+                {
+                    propExample.Add(p.Name + "=value");
+                }
+
+                config.SetSampleForType(string.Join("&", propExample), new MediaTypeHeaderValue("application/x-www-form-urlencoded"), t);
+            }
 
             //// Uncomment the following to use "1234" directly as the request sample for media type "text/plain" on the controller named "Values"
             //// and action named "Put".

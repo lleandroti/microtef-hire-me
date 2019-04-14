@@ -62,8 +62,11 @@
     <Compile Include="Mappers\AutoMapperConfig.cs" />
     <Compile Include="Mappers\EntityToModelMapping.cs" />
     <Compile Include="Mappers\ModelToEntityMapping.cs" />
+    <Compile Include="Models\Adapters\ClienteValidaModel.cs" />
+    <Compile Include="Models\Adapters\ClienteConsultaModel.cs" />
     <Compile Include="Models\Adapters\ClienteAlteraModel.cs" />
     <Compile Include="Models\Adapters\ClienteCadastroModel.cs" />
+    <Compile Include="Models\Adapters\TransacaoConsultaModel.cs" />
     <Compile Include="Services\DomainServices\DomainServiceCartao.cs" />
     <Compile Include="Services\DomainServices\DomainServiceCliente.cs" />
     <Compile Include="Services\DomainServices\DomainServiceTransacao.cs" />
@@ -78,9 +81,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Stone.Framework\Stone.Framework.csproj">
+      <Project>{9332fc65-9eb1-4e8a-9aa5-2b8378a7980d}</Project>
+      <Name>Stone.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

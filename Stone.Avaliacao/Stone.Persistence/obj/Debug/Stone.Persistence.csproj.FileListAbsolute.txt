@@ -15,3 +15,5 @@ D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Persis
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Persistence\bin\Debug\AutoMapper.pdb
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Persistence\bin\Debug\AutoMapper.xml
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Persistence\bin\Debug\System.ValueTuple.xml
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Persistence\bin\Debug\Stone.Framework.dll
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Persistence\bin\Debug\Stone.Framework.pdb

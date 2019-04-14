@@ -61,6 +61,24 @@ namespace Stone.Framework.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cliente não autenticado.
+        /// </summary>
+        public static string ClienteNaoAutenticado {
+            get {
+                return ResourceManager.GetString("ClienteNaoAutenticado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Falha de autenticação do cliente.
+        /// </summary>
+        public static string FalhaDeAutenticacaoDoCliente {
+            get {
+                return ResourceManager.GetString("FalhaDeAutenticacaoDoCliente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Registro atualizado com sucesso.
         /// </summary>
         public static string RegistroAtualizadoComSucesso {

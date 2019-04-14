@@ -81,3 +81,4 @@ D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Ac
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\AutoMapper.pdb
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\AutoMapper.xml
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\System.ValueTuple.xml
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Newtonsoft.Json.pdb

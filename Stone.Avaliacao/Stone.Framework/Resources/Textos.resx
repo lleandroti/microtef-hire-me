@@ -120,6 +120,9 @@
   <data name="APIHelp" xml:space="preserve">
     <value>API Help</value>
   </data>
+  <data name="Aviso" xml:space="preserve">
+    <value>Aviso</value>
+  </data>
   <data name="StonePagamentos" xml:space="preserve">
     <value>Stone Pagamentos</value>
   </data>

@@ -10,13 +10,14 @@ using Stone.Domain.Contracts.Services;
 using Stone.Domain.Model.Entities;
 using Stone.Framework.Resources;
 using AutoMapper;
+using Stone.Domain.Models.Adapters;
 
 namespace Stone.Api.Acquirer.Controllers
 {
     [RoutePrefix("services/cliente")]
     public class ClienteController : ApiController
     {
-        private IDomainServiceCliente _domainServiceCliente;
+        private readonly IDomainServiceCliente _domainServiceCliente;
 
         public ClienteController(IDomainServiceCliente domainServiceCliente)
         {
@@ -25,14 +26,16 @@ namespace Stone.Api.Acquirer.Controllers
 
         [HttpGet]
         [Route("listar")]
-        [ResponseType(typeof(IEnumerable<Cliente>))]
+        [ResponseType(typeof(IEnumerable<ClienteConsultaModel>))]
         public HttpResponseMessage Get()
         {
             try
             {
                 var listagem = _domainServiceCliente.ObterTodos();
 
-                return Request.CreateResponse(HttpStatusCode.OK, listagem);
+                var registros = listagem.Select(x => Mapper.Map<ClienteConsultaModel>(x));
+
+                return Request.CreateResponse(HttpStatusCode.OK, registros);
             }
             catch (Exception e)
             {
@@ -42,7 +45,7 @@ namespace Stone.Api.Acquirer.Controllers
 
         [HttpGet]
         [Route("obter")]
-        [ResponseType(typeof(Cliente))]
+        [ResponseType(typeof(ClienteConsultaModel))]
         public HttpResponseMessage Get(int id)
         {
             try
@@ -54,7 +57,7 @@ namespace Stone.Api.Acquirer.Controllers
                     if (registro == null)
                         return Request.CreateResponse(HttpStatusCode.OK, Mensagens.RegistroNaoLocalizado);
 
-                    return Request.CreateResponse(HttpStatusCode.OK, registro);
+                    return Request.CreateResponse(HttpStatusCode.OK, Mapper.Map<ClienteConsultaModel>(registro));
                 }
 
                 return Request.ReturnAllErrorsInModelState(ModelState);
@@ -126,6 +129,28 @@ namespace Stone.Api.Acquirer.Controllers
             }
 
             return Request.ReturnAllErrorsInModelState(ModelState);
+        }
+
+        [HttpPost]
+        [Route("validar")]
+        [ResponseType(typeof(bool))]
+        public HttpResponseMessage Valid([FromBody]ClienteValidaModel cliente)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var resultado = _domainServiceCliente.ValidarCliente(cliente.Nome, cliente.Password);
+
+                    return Request.CreateResponse(HttpStatusCode.OK, resultado);
+                }
+
+                return Request.ReturnAllErrorsInModelState(ModelState);
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, e.Message);
+            }
         }
     }
 }

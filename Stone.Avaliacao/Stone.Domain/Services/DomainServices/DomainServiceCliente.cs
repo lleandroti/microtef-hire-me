@@ -1,6 +1,8 @@
-﻿using Stone.Domain.Contracts.Repository;
+﻿using System.Linq;
+using Stone.Domain.Contracts.Repository;
 using Stone.Domain.Contracts.Services;
 using Stone.Domain.Model.Entities;
+using Stone.Framework.Security;
 
 namespace Stone.Domain.Services.DomainServices
 {
@@ -14,10 +16,13 @@ namespace Stone.Domain.Services.DomainServices
             _repositorio = repositorio;
         }
 
-        // todo: regra para autenticar um cliente
+        public bool ValidarCliente(string cliente, string password)
+        {
+            var pwd = CriptografiaAESHelper.Descriptografar(password);
 
-        // todo: regra para incluir um novo cliente
+            var registro = _repositorio.FindAll().FirstOrDefault(x => x.Nome == cliente && x.Password == pwd);
 
-        // todo: regra para verificar limite de crédito disponível do cliente para transação
+            return registro != null ? registro.Ativo : false;
+        }
     }
 }
