@@ -1,0 +1,7 @@
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\bin\Debug\Stone.Framework.dll
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\bin\Debug\Stone.Framework.pdb
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\obj\Debug\Stone.Framework.dll
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\obj\Debug\Stone.Framework.pdb
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\obj\Debug\Stone.Framework.Resources.Mensagens.resources
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\obj\Debug\Stone.Framework.Resources.Textos.resources
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Framework\obj\Debug\Stone.Framework.csproj.GenerateResource.Cache

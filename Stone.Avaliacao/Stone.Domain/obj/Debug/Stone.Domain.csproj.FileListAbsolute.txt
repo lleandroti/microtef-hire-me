@@ -1,0 +1,10 @@
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Domain\bin\Debug\Stone.Domain.dll
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Domain\bin\Debug\Stone.Domain.pdb
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Domain\obj\Debug\Stone.Domain.dll
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Domain\obj\Debug\Stone.Domain.pdb
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Domain\bin\Debug\AutoMapper.dll
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Domain\bin\Debug\System.ValueTuple.dll
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Domain\bin\Debug\AutoMapper.pdb
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Domain\bin\Debug\AutoMapper.xml
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Domain\bin\Debug\System.ValueTuple.xml
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Domain\obj\Debug\Stone.Domain.csprojResolveAssemblyReference.cache

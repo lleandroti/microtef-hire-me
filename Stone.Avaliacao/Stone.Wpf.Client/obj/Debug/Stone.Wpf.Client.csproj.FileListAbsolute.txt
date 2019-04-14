@@ -1,0 +1,14 @@
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Wpf.Client\bin\Debug\Stone.Wpf.Client.exe.config
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Wpf.Client\bin\Debug\Stone.Wpf.Client.exe
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Wpf.Client\bin\Debug\Stone.Wpf.Client.pdb
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Wpf.Client\obj\Debug\MainWindow.g.cs
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Wpf.Client\obj\Debug\App.g.cs
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Wpf.Client\obj\Debug\Stone.Wpf.Client_MarkupCompile.cache
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Wpf.Client\obj\Debug\Stone.Wpf.Client_MarkupCompile.lref
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Wpf.Client\obj\Debug\MainWindow.baml
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Wpf.Client\obj\Debug\Stone.Wpf.Client.g.resources
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Wpf.Client\obj\Debug\Stone.Wpf.Client.Properties.Resources.resources
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Wpf.Client\obj\Debug\Stone.Wpf.Client.csproj.GenerateResource.Cache
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Wpf.Client\obj\Debug\Stone.Wpf.Client.exe
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Wpf.Client\obj\Debug\Stone.Wpf.Client.pdb
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Wpf.Client\obj\Debug\Stone.Wpf.Client.csprojResolveAssemblyReference.cache
