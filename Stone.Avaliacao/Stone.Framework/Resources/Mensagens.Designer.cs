@@ -142,6 +142,24 @@ namespace Stone.Framework.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Senha deve ter entre 4 e 6 dítigos.
+        /// </summary>
+        public static string SenhaDeveTerEntre4a6digitos {
+            get {
+                return ResourceManager.GetString("SenhaDeveTerEntre4a6digitos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Transação aprovada.
+        /// </summary>
+        public static string TransacaoAprovada {
+            get {
+                return ResourceManager.GetString("TransacaoAprovada", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Transação cadastrada com sucesso.
         /// </summary>
         public static string TransacaoCadastradaComSucesso {

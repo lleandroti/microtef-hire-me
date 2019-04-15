@@ -86,14 +86,14 @@ namespace Stone.Wpf.Client.Operations
             return registros;
         }
 
-        public static bool CadastrarNovaTRansacao(TransacaoCadastroModel transacao)
+        public static string CadastrarNovaTRansacao(TransacaoCadastroModel transacao)
         {
             var requestUri =
                 string.Format("{0}/transacao/cadastrar", baseURI);
 
             transacao.Password = CriptografiaAESHelper.Criptografar(transacao.Password);
 
-            bool ehValido;
+            string retorno;
 
             using (var client = new HttpClient())
             {
@@ -107,10 +107,10 @@ namespace Stone.Wpf.Client.Operations
 
                 var jsonResult = responseMessage.Content.ReadAsStringAsync().Result;
 
-                ehValido = JsonConvert.DeserializeObject<bool>(jsonResult);
+                retorno = JsonConvert.DeserializeObject<string>(jsonResult);
             }
 
-            return ehValido;
+            return retorno;
         }
     }
 }

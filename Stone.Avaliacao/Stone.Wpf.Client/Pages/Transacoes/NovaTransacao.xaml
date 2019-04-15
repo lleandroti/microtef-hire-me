@@ -10,8 +10,8 @@
         <Button x:Name="btnVoltar" Content="Cancelar" HorizontalAlignment="Left" Margin="216,376,0,0" VerticalAlignment="Top" Width="100" Click="btnVoltar_Click" Height="30"/>
         <DatePicker x:Name="txtData" HorizontalAlignment="Left" Margin="143,20,0,0" VerticalAlignment="Top" IsDropDownOpen="True" Width="120" IsEnabled="False"/>
         <ComboBox x:Name="cmbTipoTransacao" HorizontalAlignment="Left" Margin="143,56,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtValor" HorizontalAlignment="Left" Height="23" Margin="143,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtParcelas" HorizontalAlignment="Left" Height="23" Margin="143,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtValor" HorizontalAlignment="Left" Height="23" Margin="143,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="DecimalValidationTextBox"/>
+        <TextBox x:Name="txtParcelas" HorizontalAlignment="Left" Height="23" Margin="143,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="NumberValidationTextBox"/>
         <Label x:Name="label" Content="Data" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label1" Content="Tipo da Transação" HorizontalAlignment="Left" Margin="20,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.106,-1.203"/>
         <Label x:Name="label2" Content="Valor" HorizontalAlignment="Left" Margin="20,88,0,0" VerticalAlignment="Top"/>
@@ -27,8 +27,8 @@
         <Label x:Name="label7" Content="Senha" HorizontalAlignment="Left" Margin="20,331,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnConfirmar" Content="Confirmar" HorizontalAlignment="Left" Margin="87,376,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="btnConfirmar_Click"/>
         <Label x:Name="label8" Content=" Validade (mês/ano)" HorizontalAlignment="Left" Margin="14,296,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtMes" HorizontalAlignment="Left" Height="23" Margin="143,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" MaxLength="2"/>
-        <TextBox x:Name="txtAno" HorizontalAlignment="Left" Height="23" Margin="201,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" MaxLength="4"/>
+        <TextBox x:Name="txtMes" HorizontalAlignment="Left" Height="23" Margin="143,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" MaxLength="2" PreviewTextInput="NumberValidationTextBox"/>
+        <TextBox x:Name="txtAno" HorizontalAlignment="Left" Height="23" Margin="201,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" MaxLength="4" PreviewTextInput="NumberValidationTextBox"/>
         <PasswordBox x:Name="txtSenha" HorizontalAlignment="Left" Margin="143,331,0,0" VerticalAlignment="Top" Width="224" Height="23"/>
 
     </Grid>

@@ -15,7 +15,7 @@ namespace Stone.Domain.Services
             _repositorio = repositorio;
         }
 
-        public void Cadastrar(TEntity obj)
+        public virtual void Cadastrar(TEntity obj)
         {
             try
             {

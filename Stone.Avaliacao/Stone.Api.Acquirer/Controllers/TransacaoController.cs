@@ -70,7 +70,7 @@ namespace Stone.Api.Acquirer.Controllers
 
         [HttpPost]
         [Route("cadastrar")]
-        [ResponseType(typeof(bool))]
+        [ResponseType(typeof(string))]
         public HttpResponseMessage Post([FromBody] TransacaoCadastroModel value)
         {
             try
@@ -81,7 +81,7 @@ namespace Stone.Api.Acquirer.Controllers
 
                     _domainService.Cadastrar(registro);
 
-                    return Request.CreateResponse(HttpStatusCode.OK, true);
+                    return Request.CreateResponse(HttpStatusCode.OK, Mensagens.TransacaoAprovada);
                 }
 
                 return Request.ReturnAllErrorsInModelState(ModelState);

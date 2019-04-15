@@ -41,5 +41,19 @@ namespace Stone.Domain.Models
 
             return false;
         }
+
+        public static bool ValidarSenhaDoCartao(string senhaCartao)
+        {
+            if (string.IsNullOrEmpty(senhaCartao))
+                return false;
+
+            var regex = new Regex(@"\d{4,6}$");
+            if (regex.IsMatch(senhaCartao))
+            {
+                return true;
+            }
+
+            return false;
+        }
     }
 }

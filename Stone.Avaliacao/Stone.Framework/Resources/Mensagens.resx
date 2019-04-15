@@ -144,6 +144,12 @@
   <data name="RegistroNaoLocalizado" xml:space="preserve">
     <value>Registro não localizado</value>
   </data>
+  <data name="SenhaDeveTerEntre4a6digitos" xml:space="preserve">
+    <value>Senha deve ter entre 4 e 6 dítigos</value>
+  </data>
+  <data name="TransacaoAprovada" xml:space="preserve">
+    <value>Transação aprovada</value>
+  </data>
   <data name="TransacaoCadastradaComSucesso" xml:space="preserve">
     <value>Transação cadastrada com sucesso</value>
   </data>

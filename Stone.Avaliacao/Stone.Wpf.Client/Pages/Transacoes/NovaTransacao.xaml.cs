@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -80,22 +81,21 @@ namespace Stone.Wpf.Client.Pages.Transacoes
                 {
                     Data = txtData.DisplayDate,
                     Valor = valor,
-                    Tipo = tipo, //cmbTipoTransacao.Text,
+                    Tipo = tipo,
                     Parcelado = chkParcelado.IsChecked != null ? chkParcelado.IsChecked.Value : false,
                     NumeroParcelas = parcelas,
                     NomeTitular = txtPortador.Text,
                     NumeroCartao = txtCartao.Text,
-                    Bandeira = bandeira, //cmbBandeira.Text,
+                    Bandeira = bandeira,
                     Chip = chkChip.IsChecked != null ? chkChip.IsChecked.Value : false,
                     ValidadeMes = mes,
                     ValidadeAno = ano,
                     Password = txtSenha.Password
                 };
 
-                ApiService.CadastrarNovaTRansacao(novaTransacao);
+                var retorno = ApiService.CadastrarNovaTRansacao(novaTransacao);
 
-                if (MessageBox.Show(Mensagens.TransacaoCadastradaComSucesso, Textos.Aviso)
-                    == MessageBoxResult.OK)
+                if (MessageBox.Show(retorno, Textos.Aviso) == MessageBoxResult.OK)
                 {
                     Close();
 
@@ -119,6 +119,12 @@ namespace Stone.Wpf.Client.Pages.Transacoes
             if (!Validations.ValidarNumeroDoCartao(txtCartao.Text))
             {
                 MessageBox.Show(Mensagens.NumeroDeCartaoInvalido, Textos.Aviso);
+                return false;
+            }
+
+            if (!Validations.ValidarSenhaDoCartao(txtSenha.Password))
+            {
+                MessageBox.Show(Mensagens.SenhaDeveTerEntre4a6digitos, Textos.Aviso);
                 return false;
             }
 
@@ -210,6 +216,18 @@ namespace Stone.Wpf.Client.Pages.Transacoes
             txtData.SelectedDate = DateTime.Today;
 
             CarregarCombos();
+        }
+
+        private void DecimalValidationTextBox(object sender, TextCompositionEventArgs e)
+        {
+            var regex = new Regex("[^0-9],.+");
+            e.Handled = regex.IsMatch(e.Text);
+        }
+
+        private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
+        {
+            var regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
         }
     }
 }

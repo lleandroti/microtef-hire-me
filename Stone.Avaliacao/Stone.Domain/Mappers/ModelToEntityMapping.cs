@@ -19,6 +19,7 @@ namespace Stone.Domain.Mappers
 
             CreateMap<TransacaoCadastroModel, Transacao>()
                 .ForMember(dest => dest.Tipo, opt => opt.MapFrom(src => (TranscactionType)src.Tipo))
+                .ForMember(dest => dest.NumeroParcelas, opt => opt.MapFrom(src => src.Parcelado ? src.NumeroParcelas : 0))
                 .ForMember(dest => dest.Cartao, opt => opt.MapFrom(src => new Cartao
                 {
                     NomeTitular = src.NomeTitular,
