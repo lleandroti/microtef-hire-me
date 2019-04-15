@@ -9,12 +9,12 @@ namespace Stone.Domain.Model.Entities
             Ativo = true;
         }
 
-        public int Sequencial { get; set; }
-        public string Nome { get; set; }
+        public virtual int Sequencial { get; set; }
+        public virtual string Nome { get; set; }
         public virtual string Password { get; set; }
-        public decimal LimiteCredito { get; set; }
-        public bool Ativo { get; set; }
-
-        public ICollection<Transacao> Transacoes { get; set; }
+        public virtual decimal LimiteCredito { get; set; }
+        public virtual bool Ativo { get; set; }
+               
+        //public virtual ICollection<Transacao> Transacoes { get; set; }
     }
 }

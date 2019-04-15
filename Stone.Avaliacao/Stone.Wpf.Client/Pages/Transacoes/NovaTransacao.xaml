@@ -5,9 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Stone.Wpf.Client.Pages.Transacoes"
         mc:Ignorable="d"
-        Title="Nova Transação" Height="300" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closed="Window_Closed">
+        Title="Nova Transação" Height="455" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closed="Window_Closed" Width="400" Loaded="Window_Loaded">
     <Grid>
-        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="207,239,0,0" VerticalAlignment="Top" Width="75" Click="btnVoltar_Click"/>
+        <Button x:Name="btnVoltar" Content="Cancelar" HorizontalAlignment="Left" Margin="216,376,0,0" VerticalAlignment="Top" Width="100" Click="btnVoltar_Click" Height="30"/>
+        <DatePicker x:Name="txtData" HorizontalAlignment="Left" Margin="143,20,0,0" VerticalAlignment="Top" IsDropDownOpen="True" Width="120" IsEnabled="False"/>
+        <ComboBox x:Name="cmbTipoTransacao" HorizontalAlignment="Left" Margin="143,56,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtValor" HorizontalAlignment="Left" Height="23" Margin="143,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtParcelas" HorizontalAlignment="Left" Height="23" Margin="143,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label" Content="Data" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Tipo da Transação" HorizontalAlignment="Left" Margin="20,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.106,-1.203"/>
+        <Label x:Name="label2" Content="Valor" HorizontalAlignment="Left" Margin="20,88,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkParcelado" Content="Parcelado" HorizontalAlignment="Left" Margin="295,94,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Nº Parcelas" HorizontalAlignment="Left" Margin="20,127,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPortador" HorizontalAlignment="Left" Height="23" Margin="143,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224" MaxLength="100"/>
+        <Label x:Name="label4" Content="Nome do Portador" HorizontalAlignment="Left" Margin="20,171,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label5" Content="Nº do Cartão" HorizontalAlignment="Left" Margin="20,211,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCartao" HorizontalAlignment="Left" Height="23" Margin="143,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224" MaxLength="19"/>
+        <ComboBox x:Name="cmbBandeira" HorizontalAlignment="Left" Margin="143,254,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label6" Content="Bandeira" HorizontalAlignment="Left" Margin="20,250,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkChip" Content="Chip" HorizontalAlignment="Left" Margin="295,256,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label7" Content="Senha" HorizontalAlignment="Left" Margin="20,331,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnConfirmar" Content="Confirmar" HorizontalAlignment="Left" Margin="87,376,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="btnConfirmar_Click"/>
+        <Label x:Name="label8" Content=" Validade (mês/ano)" HorizontalAlignment="Left" Margin="14,296,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtMes" HorizontalAlignment="Left" Height="23" Margin="143,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" MaxLength="2"/>
+        <TextBox x:Name="txtAno" HorizontalAlignment="Left" Height="23" Margin="201,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" MaxLength="4"/>
+        <PasswordBox x:Name="txtSenha" HorizontalAlignment="Left" Margin="143,331,0,0" VerticalAlignment="Top" Width="224" Height="23"/>
 
     </Grid>
 </Window>

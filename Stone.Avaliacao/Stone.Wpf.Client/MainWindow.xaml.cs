@@ -3,6 +3,7 @@ using System;
 using System.Windows;
 using Stone.Framework.Resources;
 using Stone.Wpf.Client.Operations;
+using Stone.Wpf.Client.Pages.Transacoes;
 
 namespace Stone.Wpf.Client
 {
@@ -16,39 +17,28 @@ namespace Stone.Wpf.Client
             InitializeComponent();
         }
 
-        private void btnEntrar_Click(object sender, RoutedEventArgs e)
-        {
-            bool resultado;
-
-            try
-            {
-                resultado = ApiService.AutenticarCliente(txtCliente.Text, txtSenha.Password);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, Textos.Aviso);
-                return;
-            }
-
-            if (resultado)
-            {
-                Hide();
-
-                var menu = new MenuPrincipal();
-                menu.Show();
-            }
-            else
-            {
-                MessageBox.Show(Mensagens.ClienteNaoAutenticado, Textos.Aviso);
-            }
-        }
-
-        private void btnFinalizar_Click(object sender, RoutedEventArgs e)
+        private void Window_Closed(object sender, EventArgs e)
         {
             System.Windows.Application.Current.Shutdown();
         }
 
-        private void Window_Closed(object sender, EventArgs e)
+        private void btnNovaTransacao_Click(object sender, RoutedEventArgs e)
+        {
+            Hide();
+
+            var menu = new NovaTransacao();
+            menu.Show();
+        }
+
+        private void btnConsultaTransacoes_Click(object sender, RoutedEventArgs e)
+        {
+            Hide();
+
+            var menu = new ConsultaTransacoes();
+            menu.Show();
+        }
+
+        private void btnSair_Click(object sender, RoutedEventArgs e)
         {
             System.Windows.Application.Current.Shutdown();
         }

@@ -61,6 +61,15 @@ namespace Stone.Framework.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Campo {0} deve ser preenchido.
+        /// </summary>
+        public static string CampoXdeveSerPreenchido {
+            get {
+                return ResourceManager.GetString("CampoXdeveSerPreenchido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cliente não autenticado.
         /// </summary>
         public static string ClienteNaoAutenticado {
@@ -70,11 +79,29 @@ namespace Stone.Framework.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Data de validade do cartão inválido.
+        /// </summary>
+        public static string DataDeValidadeCartaoInvalido {
+            get {
+                return ResourceManager.GetString("DataDeValidadeCartaoInvalido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Falha de autenticação do cliente.
         /// </summary>
         public static string FalhaDeAutenticacaoDoCliente {
             get {
                 return ResourceManager.GetString("FalhaDeAutenticacaoDoCliente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Numero de cartão inválido.
+        /// </summary>
+        public static string NumeroDeCartaoInvalido {
+            get {
+                return ResourceManager.GetString("NumeroDeCartaoInvalido", resourceCulture);
             }
         }
         
@@ -111,6 +138,15 @@ namespace Stone.Framework.Resources {
         public static string RegistroNaoLocalizado {
             get {
                 return ResourceManager.GetString("RegistroNaoLocalizado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Transação cadastrada com sucesso.
+        /// </summary>
+        public static string TransacaoCadastradaComSucesso {
+            get {
+                return ResourceManager.GetString("TransacaoCadastradaComSucesso", resourceCulture);
             }
         }
     }

@@ -6,7 +6,7 @@ namespace Stone.Domain.Model.Entities
 {
     public class Cartao
     {
-        public int Sequencial { get; set; }
+        public virtual int Sequencial { get; set; }
         public virtual string NomeTitular { get; set; }
         public virtual string Numero { get; set; }
         public virtual DateTime DataExpiracao { get; set; }
@@ -17,6 +17,6 @@ namespace Stone.Domain.Model.Entities
         public virtual int SequencialBandeira { get; set; }
         public virtual Bandeira Bandeira { get; set; }
 
-        public ICollection<Transacao> Transacoes { get; set; }
+        public virtual ICollection<Transacao> Transacoes { get; set; }
     }
 }

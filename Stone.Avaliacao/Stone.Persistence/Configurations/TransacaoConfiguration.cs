@@ -24,8 +24,8 @@ namespace Stone.Persistence.Configurations
             Property(p => p.SequencialCartao).HasColumnName("SEQUENCIALCARTAO").IsRequired();
             HasRequired(p => p.Cartao).WithMany(e => e.Transacoes).HasForeignKey(p => p.SequencialCartao);
 
-            Property(p => p.SequencialCliente).HasColumnName("SEQUENCIALCLIENTE").IsRequired();
-            HasRequired(p => p.Cliente).WithMany(e => e.Transacoes).HasForeignKey(p => p.SequencialCartao);
+            //Property(p => p.SequencialCliente).HasColumnName("SEQUENCIALCLIENTE");
+            //HasOptional(p => p.Cliente).WithMany(e => e.Transacoes).HasForeignKey(p => p.SequencialCartao);
         }
     }
 }

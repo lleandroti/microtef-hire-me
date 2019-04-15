@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Stone.Framework.Resources;
 using Stone.Wpf.Client.Operations;
 
 namespace Stone.Wpf.Client.Pages.Transacoes
@@ -29,14 +30,12 @@ namespace Stone.Wpf.Client.Pages.Transacoes
         {
             Close();
 
-            var menu = new MenuPrincipal();
-            menu.Show();
+            Application.Current.MainWindow.Show();
         }
 
         private void Window_Closed(object sender, EventArgs e)
         {
-            var menu = new MenuPrincipal();
-            menu.Show();
+            Application.Current.MainWindow.Show();
         }
 
         private void Window_ContentRendered(object sender, EventArgs e)
@@ -49,7 +48,17 @@ namespace Stone.Wpf.Client.Pages.Transacoes
             var inicioPeriodo = DateTime.Now;
             var terminoPeriodo = DateTime.Now;
 
-            lvTransacoes.ItemsSource = ApiService.ListarTransacoesPorPeriodo(inicioPeriodo, terminoPeriodo);
+            try
+            {
+                lvTransacoes.ItemsSource = ApiService.ListarTransacoesPorPeriodo(inicioPeriodo, terminoPeriodo);
+            }
+            catch (Exception ex)
+            {
+                var mensagem = string.Format("{0}\n{1}", ex.Message,
+                    ex.InnerException != null ? ex.InnerException.Message : string.Empty);
+
+                MessageBox.Show(mensagem, Textos.Aviso);
+            }
         }
     }
 }

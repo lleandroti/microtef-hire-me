@@ -42,11 +42,12 @@
       <HintPath>..\packages\ControlzEx.3.0.2.4\lib\net45\ControlzEx.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Mvvm.v16.2, Version=16.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
     <Reference Include="MahApps.Metro, Version=1.6.5.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MahApps.Metro.1.6.5\lib\net45\MahApps.Metro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -77,6 +78,10 @@
     </Reference>
     <Reference Include="UIAutomationProvider" />
     <Reference Include="UIAutomationTypes" />
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -98,7 +103,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Pages\MenuPrincipal.xaml">
+    <Page Include="Pages\Acessos\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -113,8 +118,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Operations\ApiService.cs" />
-    <Compile Include="Pages\MenuPrincipal.xaml.cs">
-      <DependentUpon>MenuPrincipal.xaml</DependentUpon>
+    <Compile Include="Pages\Acessos\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Transacoes\ConsultaTransacoes.xaml.cs">
       <DependentUpon>ConsultaTransacoes.xaml</DependentUpon>

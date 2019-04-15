@@ -7,13 +7,8 @@
         mc:Ignorable="d"
         Title="Pagamentos" Height="300" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Closed="Window_Closed">
     <Grid>
-        <TextBox x:Name="txtCliente" HorizontalAlignment="Left" Height="23" Margin="35,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224"/>
-        <Label x:Name="label1" Content="Cliente" HorizontalAlignment="Left" Margin="35,58,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label2" Content="Senha" HorizontalAlignment="Left" Margin="35,124,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label3" Content="Acesse a sua conta" HorizontalAlignment="Center" Margin="35,19,35,0" VerticalAlignment="Top" Width="224"/>
-        <PasswordBox x:Name="txtSenha" HorizontalAlignment="Left" Margin="35,151,0,0" VerticalAlignment="Top" Width="224" Height="23"/>
-        <Button x:Name="btnEntrar" Content="Entrar" HorizontalAlignment="Center" Margin="35,209,159,0" VerticalAlignment="Top" Width="100" Height="30" Click="btnEntrar_Click"/>
-        <Button x:Name="btnFinalizar" Content="Finalizar" HorizontalAlignment="Left" Margin="159,209,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="btnFinalizar_Click"/>
-
+        <Button x:Name="btnNovaTransacao" Content="Nova Transação" HorizontalAlignment="Center" Margin="52,51,42,0" VerticalAlignment="Top" Width="200" Height="30" Click="btnNovaTransacao_Click"/>
+        <Button x:Name="btnConsultaTransacoes" Content="Consultar Transações" HorizontalAlignment="Center" Margin="52,106,42,0" VerticalAlignment="Top" Width="200" Height="30" Click="btnConsultaTransacoes_Click"/>
+        <Button x:Name="btnSair" Content="Sair" HorizontalAlignment="Center" Margin="52,162,42,0" VerticalAlignment="Top" Width="200" Height="30" Click="btnSair_Click"/>
     </Grid>
 </Window>

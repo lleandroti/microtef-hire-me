@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Ninject;
 using Stone.Domain.Contracts.Repository;
 using Stone.Domain.Contracts.Services;
 using Stone.Domain.Model.Entities;

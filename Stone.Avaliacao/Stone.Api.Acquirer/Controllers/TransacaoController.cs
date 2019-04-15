@@ -68,27 +68,28 @@ namespace Stone.Api.Acquirer.Controllers
             }
         }
 
-        //[HttpPost]
-        //[Route("cadastrar")]
-        //public HttpResponseMessage Post([FromBody] ClienteCadastroModel value)
-        //{
-        //    try
-        //    {
-        //        if (ModelState.IsValid)
-        //        {
-        //            var cliente = Mapper.Map<ClienteCadastroModel, Cliente>(value);
+        [HttpPost]
+        [Route("cadastrar")]
+        [ResponseType(typeof(bool))]
+        public HttpResponseMessage Post([FromBody] TransacaoCadastroModel value)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var registro = Mapper.Map<TransacaoCadastroModel, Transacao>(value);
 
-        //            _domainService.Cadastrar(cliente);
+                    _domainService.Cadastrar(registro);
 
-        //            return Request.CreateResponse(HttpStatusCode.OK, Mensagens.RegistroCadastradoComSucesso);
-        //        }
+                    return Request.CreateResponse(HttpStatusCode.OK, true);
+                }
 
-        //        return Request.ReturnAllErrorsInModelState(ModelState);
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        return Request.CreateResponse(HttpStatusCode.BadRequest, e.Message);
-        //    }
-        //}
+                return Request.ReturnAllErrorsInModelState(ModelState);
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, e.Message);
+            }
+        }
     }
 }

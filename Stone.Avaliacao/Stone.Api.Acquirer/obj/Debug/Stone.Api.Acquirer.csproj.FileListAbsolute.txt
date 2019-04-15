@@ -1,4 +1,3 @@
-D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\obj\Debug\Stone.Api.Acquirer.csprojResolveAssemblyReference.cache
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\ApplicationInsights.config
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\roslyn\csc.exe
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -16,6 +15,7 @@ D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Ac
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Stone.Api.Acquirer.dll
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Stone.Api.Acquirer.pdb
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Antlr3.Runtime.dll
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\AutoMapper.dll
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\EntityFramework.dll
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\EntityFramework.SqlServer.dll
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Microsoft.AI.Agent.Intercept.dll
@@ -36,6 +36,7 @@ D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Ac
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Stone.Framework.dll
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Stone.Persistence.dll
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\System.Net.Http.Formatting.dll
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\System.ValueTuple.dll
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\System.Web.Helpers.dll
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\System.Web.Http.dll
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\System.Web.Http.WebHost.dll
@@ -50,6 +51,8 @@ D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Ac
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Stone.Domain.pdb
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Stone.Framework.pdb
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Stone.Persistence.pdb
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\AutoMapper.pdb
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\AutoMapper.xml
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\EntityFramework.xml
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\EntityFramework.SqlServer.xml
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Microsoft.AI.DependencyCollector.xml
@@ -58,11 +61,13 @@ D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Ac
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Microsoft.AI.WindowsServer.xml
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Microsoft.ApplicationInsights.xml
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Newtonsoft.Json.pdb
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Newtonsoft.Json.xml
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Ninject.xml
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Ninject.Web.Common.xml
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Ninject.Web.Common.WebHost.xml
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Ninject.Web.WebApi.xml
-D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Newtonsoft.Json.xml
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\System.ValueTuple.xml
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\System.Net.Http.Formatting.xml
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\System.Web.Helpers.xml
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\System.Web.Http.xml
@@ -74,11 +79,6 @@ D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Ac
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\System.Web.WebPages.Deployment.xml
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\System.Web.WebPages.Razor.xml
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Antlr3.Runtime.pdb
+D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\obj\Debug\Stone.Api.Acquirer.csprojResolveAssemblyReference.cache
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\obj\Debug\Stone.Api.Acquirer.dll
 D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\obj\Debug\Stone.Api.Acquirer.pdb
-D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\AutoMapper.dll
-D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\System.ValueTuple.dll
-D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\AutoMapper.pdb
-D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\AutoMapper.xml
-D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\System.ValueTuple.xml
-D:\developer\repository\lleandroti\microtef-hire-me\Stone.Avaliacao\Stone.Api.Acquirer\bin\Newtonsoft.Json.pdb

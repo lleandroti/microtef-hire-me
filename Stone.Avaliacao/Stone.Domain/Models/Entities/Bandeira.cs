@@ -4,11 +4,11 @@ namespace Stone.Domain.Model.Entities
 {
     public class Bandeira
     {
-        public int Sequencial { get; set; }
-        public string Nome { get; set; }
-        public bool AceitaCredito { get; set; }
-        public bool AceitaDebito { get; set; }
-
-        public ICollection<Cartao> Cartoes { get; set; }
+        public virtual int Sequencial { get; set; }
+        public virtual string Nome { get; set; }
+        public virtual bool AceitaCredito { get; set; }
+        public virtual bool AceitaDebito { get; set; }
+               
+        public virtual ICollection<Cartao> Cartoes { get; set; }
     }
 }

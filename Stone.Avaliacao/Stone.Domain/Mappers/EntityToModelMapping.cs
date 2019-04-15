@@ -20,6 +20,11 @@ namespace Stone.Domain.Mappers
                 .ForMember(dest => dest.Tipo, opt => opt.MapFrom(src => src.Tipo.GetDescription()))
                 .ForMember(dest => dest.NomeTitular, opt => opt.MapFrom(src => src.Cartao.NomeTitular))
                 .ForMember(dest => dest.Bandeira, opt => opt.MapFrom(src => src.Cartao.Bandeira.Nome));
+
+            CreateMap<Bandeira, BandeiraConsultaModel>();
+
+            CreateMap<Cartao, CartaoConsultaModel>()
+                .ForMember(dest => dest.Bandeira, opt => opt.MapFrom(src => src.Bandeira.Nome));
         }
     }
 }
